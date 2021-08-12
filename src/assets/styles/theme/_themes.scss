@@ -1,0 +1,20 @@
+$themes: (
+  dark: (
+    logo-wrap-bg-color: #122031,
+    icon-shrink-color: #ffffff,
+    menu-wrap-bg-color: #1d2937,
+    menu-text-color: #9bacbc,
+    menu-hover-bg-color: #0479fc,
+    menu-hover-text-color: #fff,
+    menu-hover-rgba: rgba(24, 57, 94, 0.2),
+  ),
+  light: (
+    logo-wrap-bg-color: #f7fafd,
+    icon-shrink-color: #666666,
+    menu-wrap-bg-color: #f7fafd,
+    menu-text-color: #333333,
+    menu-hover-bg-color: unset,
+    menu-hover-text-color: #0479fc,
+    menu-hover-rgba: rgba(255, 255, 255, 1),
+  ),
+);

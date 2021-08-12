@@ -1,0 +1,197 @@
+@import "./base.css";
+#app {
+  height: 100%;
+}
+
+$w_menu: 210px;
+
+/*======================= 菜单区域 开始 =======================*/
+
+.cus-menu-wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start;
+}
+
+/*  logo区域 开始 */
+.logo-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  height: 70px !important;
+
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  img.collapse {
+    position: absolute;
+    right: 20px;
+    width: 17px !important;
+    height: 17px !important;
+  }
+}
+
+/*  logo区域 结束 */
+
+.el-menu {
+  border-right: none !important;
+  flex: 1 !important;
+}
+
+.el-menu:not(.el-menu--collapse) {
+  width: $w_menu !important;
+  border-right: none;
+}
+// 一级标题
+.el-submenu__title {
+  height: 50px;
+  font-size: 14px;
+  &.is-active {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 5px;
+      height: 50px !important;
+      background-color: #0479fc;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+}
+
+// 二级标题
+.nest-menu .el-menu-item,
+.nest-menu .el-submenu__title {
+  font-size: 14px;
+  height: 40px;
+  padding-left: 60px !important;
+}
+
+// 三级标题
+.nest-menu .el-submenu .el-menu-item {
+  padding-left: 76px !important;
+}
+
+.nest-menu .el-menu-item,
+.nest-menu .el-submenu__title,
+.nest-menu .el-submenu .el-menu-item {
+  height: 40px;
+  line-height: 40px;
+}
+/*======================= 菜单区域 结束 =======================*/
+
+/*======================= 列表样式区域 开始 =======================*/
+/* header 区域 */
+.el-header {
+  color: #333;
+  height: 81px !important;
+}
+
+.el-tabs__nav-wrap::after {
+  content: none;
+}
+.el-tabs__active-bar {
+  transform: translateX(-1000px) !important;
+}
+
+/** 查询区 */
+.search-wrap {
+  width: 100%;
+  flex-wrap: wrap;
+  .el-select {
+    flex-shrink: 0;
+    margin-top: 5px;
+    margin-right: 8px;
+  }
+  .button-wrap {
+    height: 36px;
+    margin-top: 5px;
+    justify-content: flex-end;
+  }
+}
+
+/** 功能操作区 */
+.function-wrap {
+  margin-top: 20px;
+}
+
+/** 提醒区 */
+.tip-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 20px;
+  padding-left: 5px;
+  background-color: #e6f7ff;
+  border-radius: 4px;
+
+  i {
+    color: #4591ff;
+  }
+  span:not(.el-link span) {
+    color: #666666;
+  }
+  span:not(.el-link span),
+  .el-link {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+}
+
+/** 表格区  */
+.el-table {
+  margin-top: 20px;
+  .cell {
+    max-height: 48px !important;
+    overflow: hidden;
+  }
+}
+
+.el-pagination {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+
+  .el-pagination__sizes {
+    flex: 1;
+  }
+}
+
+.page-content {
+  .filter-content {
+    .filter-item {
+      margin: 0 10px 20px 0;
+    }
+    .filter-input,
+    .filter-select,
+    .filter-datepicker {
+      width: 185px !important;
+    }
+  }
+  .table-actions {
+  }
+  .table-count-statistics {
+  }
+  .table-list {
+  }
+}
+
+/*======================= 列表样式区域 结束 =======================*/
+
+/*======================= 表单页区域  开始 ========================*/
+.el-date-editor {
+  width: 100% !important;
+}
+.el-form-item__content {
+  margin-left: 0 !important;
+}
+
+/*======================= 表单页区域  结束 ========================*/
