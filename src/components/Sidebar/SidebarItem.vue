@@ -56,8 +56,6 @@ export default defineComponent({
       return 0;
     });
     const theOnlyOneChild = computed(() => {
-      console.log("11", props.item);
-      console.log("showingChildNumber", showingChildNumber.value);
       if (showingChildNumber.value > 1) {
         return null;
       }

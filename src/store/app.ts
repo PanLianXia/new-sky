@@ -1,4 +1,3 @@
-// store.js
 import { defineStore } from "pinia";
 import { HeaderTabModal } from "../model/app";
 

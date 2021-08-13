@@ -3,10 +3,16 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, onMounted } from 'vue'
+import genTestUserSig from '../public/debug/GenerateTestUserSig'
 
 export default defineComponent({
-  name: 'App'
+  name: 'App',
+  setup() {
+    onMounted(() =>{
+      genTestUserSig('')
+    })
+  }
 })
 </script>
 
