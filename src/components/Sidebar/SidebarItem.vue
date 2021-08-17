@@ -167,7 +167,7 @@ export default defineComponent({
       top: 0;
       right: 0;
       width: 5px;
-      height: 50px;
+      height: 56px;
       background-color: #0479fc;
       border-top-left-radius: 5px;
       border-bottom-left-radius: 5px;

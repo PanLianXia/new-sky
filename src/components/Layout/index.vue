@@ -1,5 +1,5 @@
 <template>
-   <el-container style="height: 100%" data-theme="dark" :class="classes">
+   <el-container style="height: 100%" data-theme="light" :class="classes">
     <el-aside class="aside-sidebar">
       <Sidebar class="sidebar-content" :isCollapse="isCollapse"/>
     </el-aside>
