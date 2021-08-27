@@ -1,5 +1,6 @@
 <template>
   <el-button type="primary" @click="changeCount">{{count}}</el-button>
+  <div class="test-bind-bgcolor">1111</div>
 </template>
 
 <script lang="ts">
@@ -18,14 +19,20 @@ export default defineComponent({
         //     store.commit('appStore/increment')
         // }
         // return {count, changeCount}
-
+        const bgcolor = 'red'
         const store = appStore()
         const count = computed(() => store.count)
 
         const changeCount = () => {
             store.increment()
         }
-        return {count, changeCount}
+        return {bgcolor, count, changeCount}
     },
 })
 </script>
+
+<style lang="scss" scoped>
+.test-bind-bgcolor {
+    background-color: v-bind(bgcolor);
+}
+</style>

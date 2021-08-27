@@ -80,7 +80,7 @@ export let constantRoutes: Array<RouteRecordRaw> = [
             {
                 path: '/main1/Login',
                 name: 'Login',
-                component: () => import('../views/Login.vue'),
+                component: () => import('../views/Login/index.vue'),
                 meta: { 
                     title: '主页3',
                     icon: 'el-icon-menu'

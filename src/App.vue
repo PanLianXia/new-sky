@@ -3,17 +3,17 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue'
-import genTestUserSig from '../public/debug/GenerateTestUserSig'
+import { defineComponent, onMounted } from "vue";
+import genTestUserSig from "../public/debug/GenerateTestUserSig";
 
 export default defineComponent({
-  name: 'App',
+  name: "App",
   setup() {
-    onMounted(() =>{
-      genTestUserSig('')
-    })
-  }
-})
+    onMounted(() => {
+      genTestUserSig("");
+    });
+  },
+});
 </script>
 
 <style>
