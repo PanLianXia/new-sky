@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
+    "nested":"vite serve src/nested/ --config ./vite.config.ts",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview"
   },

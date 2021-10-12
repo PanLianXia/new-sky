@@ -10,6 +10,14 @@ export default defineConfig({
       '@': resolve(__dirname, 'src') // 设置 `@` 指向 `src` 目录
     }
   },
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        nested: resolve(__dirname, 'nested/index.html')
+      }
+    }
+  },
   server: {
     proxy: { // 本地开发环境通过代理实现跨域，生产环境使用 nginx 转发
       // 正则表达式写法
