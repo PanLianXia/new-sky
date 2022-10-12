@@ -22,7 +22,7 @@
                   size="medium"
                   src="https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png"
                 ></el-avatar>
-                guofan
+                pp
                 <i class="el-icon-arrow-down el-icon--right"></i>
               </span>
               <template #dropdown>
